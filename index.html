@@ -5,6 +5,8 @@
         <title>NABM's mint login</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
         <script src="script.js" defer></script>
     </head>
 
@@ -22,25 +24,31 @@
         <div class=container>
             <form>
                 <fieldset>
-                    <legend>
+                    <div class="legend">
                         <h3>Create an Intuit account</h3>
-                        <p>One account for everything Intuit, including Mint.</p>
-                        <a href="#"><p>Learn more</p></a>
-                    </legend>
-                    <label>
-                        Email adress <input type="email" required>
-                    </label>
-                    <label>
-                        Telephone <span>(Recommended)</span>
-                        <input type="tel">
-                    </label>
-                    <p>Standard call, message, or data rates may apply.</p>
-                    <label>
-                        Password
-                        <input type="password" required>
-                    </label>
+                        <div>
+                            <p>One account for everything Intuit, including Mint. 
+                                <a href="#">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email">Email adress</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="telephone">Phone</label>
+                        <input type="tel" name="telephone">
+                        <p class="sms-warning">Standard call, message, or data rates may apply.</p>
+                    </div>
+
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required>
+                    </div>
                     <button>Create Account</button>
-                    <p>By selecting Create Account, you agree to our <a href="#">Terms</a> and have read and acknowledge our <a href="#">Global Privacy Statement</a>.</p>
+                    <p class="accept-warning">By selecting Create Account, you agree to our <a href="#">Terms</a> and have read and acknowledge our <a href="#">Global Privacy Statement</a>.</p>
                 </fieldset>
             </form>
         </div>
